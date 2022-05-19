@@ -1,0 +1,290 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+a{text-decoration: none;}
+a , .discount-Penelope i , .discount-item p{
+    color: #7b5244;
+}
+/* -------------------Header--------------- */
+.container{
+    width: 80%;
+}
+.container , .title-underline , .delivery-item-img , .Featured-Products{
+    margin: auto;
+}
+.headr-container , .category-items , .discount-items , .Penelope-dashs , .Featured-items{
+    display: flex;
+    justify-content: space-between;
+}
+.nav-taps{
+    font-weight: bold;
+}
+.nav-taps li{
+    display: inline-block;
+    padding: 10px 20px;
+    list-style: none;
+}
+.nav-taps li , .furniture-tap , .category-item , .Featured-item{
+    position: relative;
+}
+.tap-overlay1 , .tap-overlay3{
+    bottom: 50%;
+}
+.tap-overlay1 , .tap-overlay2 , .nav-taps > ul > li::after , .nav-taps > ul > li::before , .dropdown{
+    left: 0;
+}
+.tap-overlay1 , .tap-overlay2 , .tap-overlay3 , .tap-overlay4{
+    width: 1.6px;
+    height: 0;
+}
+.tap-overlay1 , .tap-overlay2 , .tap-overlay3 , .tap-overlay4 , .nav-taps > ul > li::after , .nav-taps > ul > li::before , .Featured-overlay{
+    position: absolute;
+    transition: 0.25s;
+}
+.tap-overlay1 , .tap-overlay2 , .tap-overlay3 , .tap-overlay4 , .nav-taps > ul > li::after , .nav-taps > ul > li::before , .cart-counter::after , .title-underline , .category-item-icon , .Penelope-dash , .Featured-overlay i{
+    background-color: #7b5244;
+}
+.nav-taps li:hover .tap-overlay1 , .nav-taps li:hover .tap-overlay2 , .nav-taps li:hover .tap-overlay3 , .nav-taps li:hover .tap-overlay4{
+    height: 50%;
+}
+.tap-overlay2 , .tap-overlay4 , .Featured-icons{
+    top: 50%;
+}
+.tap-overlay3 , .tap-overlay4 , .category-item-icon{
+    right: 0;
+}
+.nav-taps > ul > li::after , .Featured-overlay{
+    top: 0;
+}
+.nav-taps > ul > li::after , .nav-taps > ul > li::before{
+    content: "";
+    width: 0;
+    height: 1.5px;
+}
+.nav-taps > ul > li:hover::after , .nav-taps > ul > li:hover::before{
+    transition-delay: 0.25s;
+}
+.nav-taps > ul > li::before , .category-item-icon{
+    bottom: 0;
+}
+.furniture-tap:hover .dropdown{
+    transform: scale(1 , 1);
+    opacity: 1;
+    transition: 0.5s;
+}
+.dropdown{
+    width: 455px;
+    background-color: #fff;
+    border: 2px solid #7b5244;
+    position: absolute;
+    font-weight: lighter;
+    display: flex;
+    top: 110%;
+    transform: scale(0 , 0);
+    opacity: 0;
+}
+.tables{
+    padding-bottom: 5px;
+    border-bottom: 1px dotted #7b5244;
+}
+/* --------------- */
+.nav-icons{
+    padding: 10px 0px;
+}
+.nav-icons i{
+    font-size: 1.8em;
+}
+.center-ico{
+    margin: 0px 15px;
+}
+.cart-counter::after{
+    content: "0";
+    padding: 5px;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 50%;
+}
+/* -------------------/Header--------------- */
+
+/* -------------------Main--------------- */
+.nav-img img , .main-img , .category-item img , .delivery-item , .Feature-item img , .Feature-overlay , .Feature-overlay img , .nav-taps > ul > li:hover::after , .nav-taps > ul > li:hover::before{
+    width: 100%;
+}
+/* -------------------/Main--------------- */
+
+/* -------------------Section-2--------------- */
+.sec-title , .Featured-overlay i{
+    font-size: 20px;
+}
+.sec-title , .category-item-icon , .delivery-item , .Featured-overlay i{
+    text-align: center;
+}
+.title{
+    margin-bottom: 10px;
+}
+.title-underline{
+    width: 100px;
+    height: 2.5px;
+    transition: 0.5s;
+}
+.sec-title:hover .title-underline{
+    transform: scale(1.5,1);
+}
+/* --------------- */
+.category-items{
+    padding: 30px 0px;
+}
+.category-item{
+    width: 24%;
+}
+.category-item p{
+    margin: 15px 0px 4px 0px;
+    color: gray;
+}
+.category-item-icon{
+    width: 35px;
+    height: 35px;
+    color: #fff;
+    font-size: 25px;
+    line-height: 35px;
+    position: absolute;
+    visibility: hidden;
+}
+.category-item:hover .category-item-icon{
+    visibility: visible;
+}
+/* --------------- */
+.discount-Penelope{
+    width: 50%;
+    background-color: #f7f3ef;
+    padding: 20px;
+}
+.discount-Penelope i{
+    font-size: 60px;
+}
+.Penelope-content{
+    margin: 28px 0px 45px 0px;
+    line-height: 25px;
+}
+.Penelope-dashs{
+    justify-content: end;
+}
+.Penelope-dash{
+    width: 50px;
+    height: 1.5px;
+    margin: 0px 10px;
+}
+.discount-item{
+    width: 23%;
+    height: 300px;
+    padding: 20px;
+    background-image: url(../images/cms-banner-1.jpg);
+    background-size: cover;
+    background-position: center center;
+    font-size: 17px;
+    transition: 0.5s;
+}
+.discount-item2{
+    background-image: url(../images/cms-banner-2.jpg);
+}
+.discount-item p{
+    font-size: 18px;
+}
+.discount-item:hover{
+    transform: scale(1.1);
+}
+/* --------------- */
+.delivery-items{
+    margin: 40px 0px;
+    column-count: 5;
+    column-rule: 2px solid #7b5244;
+}
+.delivery-item-img{
+    width: 40px;
+    height: 50px;
+    background-image: url(../images/service-icon.png);
+    background-size: cover;
+    transition: 0.5s;
+    margin-bottom: 10px;
+}
+.delivery-item p{
+    color: #c4c4c4;
+}
+.delivery-item:hover .delivery-item-img{
+    background-position: 0px -87px;
+}
+.delivery-item-img2{
+    background-position: 0px -174px;
+}
+.delivery-item:hover .delivery-item-img2{
+    background-position: 0px -261px;
+}
+.delivery-item-img3{
+    background-position: 0px -348px;
+}
+.delivery-item:hover .delivery-item-img3{
+    background-position: 0px -435px;
+}
+.delivery-item-img4{
+    background-position: 0px -522px;
+}
+.delivery-item:hover .delivery-item-img4{
+    background-position: 0px -609px;
+}
+.delivery-item-img5{
+    background-position: 0px -696px;  
+}
+.delivery-item:hover .delivery-item-img5{
+    background-position: bottom;
+}
+/* -------------------/Section-2--------------- */
+
+/* -------------------Section-3--------------- */
+.Featured-Products{
+    width: 40%;
+    margin-top: 40px;
+}
+.Featured-Products span{
+    padding: 15px;
+}
+.Featured-items{
+    margin: 50px 0px;
+}
+.Featured-item{
+    width: 32%;
+}
+.Featured-item i{
+    color: yellow;
+    font-size: 14px;
+}
+.Featured-item p{
+    margin: 5px 0px;
+}
+.Featured-item .star-empty{
+    color: #000;
+}
+.Featured-overlay{
+    left: 0;
+    transform: rotateY(90deg);
+    opacity: 0.9;
+}
+.Featured-overlay i{
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    line-height: 40px;
+}
+.Featured-icons{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+.Featured-item:hover .Featured-overlay{
+    transform: rotateY(0deg);
+}
+/* -------------------/Section-3--------------- */
