@@ -257,7 +257,7 @@ a , .discount-Penelope i , .discount-item p{
 }
 .Featured-item{
     width: 32%;
-    overflow: auto;
+    overflow: hidden;
 }
 .Featured-item i{
     color: yellow;
