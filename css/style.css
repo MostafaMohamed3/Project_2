@@ -112,7 +112,7 @@ a , .discount-Penelope i , .discount-item p{
 /* -------------------/Header--------------- */
 
 /* -------------------Main--------------- */
-.nav-img img , .main-img , .category-item img , .delivery-item , .Feature-item img , .Feature-overlay , .Feature-overlay img , .nav-taps > ul > li:hover::after , .nav-taps > ul > li:hover::before{
+.nav-img img , .main-img , .category-item img , .delivery-item , .Feature-items , .Feature-item img , .Feature-overlay , .Feature-overlay img , .nav-taps > ul > li:hover::after , .nav-taps > ul > li:hover::before{
     width: 100%;
 }
 /* -------------------/Main--------------- */
@@ -257,6 +257,7 @@ a , .discount-Penelope i , .discount-item p{
 }
 .Featured-item{
     width: 32%;
+    overflow: auto;
 }
 .Featured-item i{
     color: yellow;
